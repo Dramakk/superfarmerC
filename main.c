@@ -407,16 +407,6 @@ int main(){
         }
     }
     wgetch(menuWindow);
-	endwin();
-	char komenda[20];
-	char sROW[10];
-	strcpy(sROW, sROW);
-	char sCOL[10];
-	strcpy(sCOL, sCOL);
-	strcat(sROW, " ");
-	strcpy(komenda, "resize -s ");
-	strcat(komenda, sROW);
-	strcat(komenda, sCOL);
-	system(komenda);
-	return 0;
+    endwin();
+    return 0;
 }
