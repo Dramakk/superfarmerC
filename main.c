@@ -112,7 +112,7 @@ int menuGry(WINDOW *menu_win){
         }
         noecho();
         int wybranaOpcja = 0;
-        while(wybranaOpcja < 1 || wybranaOpcja >6) wscanw(menu_win, " %d", &wybranaOpcja);
+        while(wybranaOpcja < 1 || wybranaOpcja > 4) wscanw(menu_win, " %d", &wybranaOpcja);
         if(czyKomputer && wybranaOpcja == 4) return 6;
         return wybranaOpcja;
     }
